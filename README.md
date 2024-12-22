@@ -68,6 +68,31 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
+### Run as docker
+docker-compose up --build
+
+docker-compose exec web python manage.py migrate
+
+docker-compose exec web python manage.py createsuperuser
+
+# Start containers
+docker-compose up
+
+# Start in detached mode
+docker-compose up -d
+
+# Stop containers
+docker-compose down
+
+# View logs
+docker-compose logs -f
+
+# Shell into web container
+docker-compose exec web bash
+
+# Run Django commands
+docker-compose exec web python manage.py [command]
+
 ### Project Structure
 ```
 jackfruitaibackend/
