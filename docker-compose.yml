@@ -14,7 +14,7 @@ services:
       - DB_NAME=demo
       - DB_USER=demo
       - DB_PASSWORD=demo
-      - ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
+      - ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0,194.233.93.228
     depends_on:
       - db
 
